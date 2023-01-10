@@ -1,5 +1,5 @@
 ---
-- name: install Google Chrome
+- name: Install Google Chrome
   hosts: localhost
   become: true
   tasks:
@@ -17,7 +17,7 @@
         gpgcheck: true
         gpgkey: https://dl.google.com/linux/linux_signing_key.pub
 
-    - name: Install google-chrome-stable
+    - name: Install Google Chrome stable
       ansible.builtin.yum:
         name: "google-chrome-stable"
         state: latest 
