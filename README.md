@@ -2,3 +2,5 @@
 IT Automation with Red Hat® Ansible®!
 
 #### ansible-playbook -T 30 -b --ask-become-pass rhel_update.yml
+
+#### rhel_install_google_chrome.yml
