@@ -1,12 +1,14 @@
 # Project GO use Red Hat® Ansible®!
 IT Automation with Red Hat® Ansible®!
 
-#### ansible-playbook -T 30 -b --ask-become-pass rhel_update.yml
-
-#### rhel_install_google_chrome.yml
-
 
 ## Ansible AD HOC Command Examples
+
+
+#### Copy file
+```Shell
+ansible t1 -i inv -m ansible.builtin.copy -a "src=/file dest=/tmp/file"
+```
 
 #### Mem info
 ```shell
