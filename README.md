@@ -20,3 +20,9 @@ ansible t1 -i inv -m shell -a "cat /proc/meminfo|head -2"
 ansible t1 -i inv -a "/sbin/reboot" -u $USER --become --ask-become-pass
 ```
 
+#### How to install and remove software
+* present, absent
+```shell
+ansible t1 -i inv -m package -a 'name=mc state=present' -u $USER --become --ask-become-pass
+```
+
